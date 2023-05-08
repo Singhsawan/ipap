@@ -14,9 +14,9 @@ def is_enabled(value, default):
 # Bot information
 PORT = environ.get("PORT", "8080")
 SESSION = environ.get('SESSION', 'ipapcornbot')
-API_ID = int(environ.get('API_ID', '15823382'))
-API_HASH = environ.get('API_HASH', '016d5e115a06ddfb6121823d72ae4d8c')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6230153536:AAHua_9TC0C2Du4lD5doyMvIoynj-KV6_OE")
+API_ID = int(environ.get('API_ID', '21748181'))
+API_HASH = environ.get('API_HASH', 'b1d962414e186e0778911f3183feac33')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6247894220:AAHPF6b8X3g95vY6tc1GpphCSgBGLC2YcDw")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -24,12 +24,12 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 PICS = (environ.get('PICS', 'https://graph.org/file/409d8640f064786191655.jpg https://graph.org/file/a8f174a7d33182c55e243.jpg https://graph.org/file/a81e97f2aeecb1dd48761.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5104293442').split()]
-ADMINS = (ADMINS.copy() + [1938030055])
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5651594253').split()]
+ADMINS = (ADMINS.copy() + [5651594253])
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', 'xxxxxxxxxx').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', '-1001740189478')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001952663939')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -37,15 +37,15 @@ reqst_channel = environ.get('REQST_CHANNEL_ID')
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Dipanshu_021:ad8920@cluster0.f7migc1.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cynitev5Bot")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Test:Sawansingh24@cluster0.eicxbp9.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'files')
 
 # Others
 PLAN_NAME = environ.get('PLAN_NAME', 'Not Active')
 EXP_DATE = environ.get('EXP_DATE', 'Not Active')
 SUB_DATE = environ.get('SUB_DATE', 'Not Active')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001754309185'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001551869890'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'ipapcornsupport')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), False)
@@ -76,8 +76,8 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
     
 # URL Shortener #
 
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'flashlink.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'f83fccf13f976f443c234e9990aeea7d56135284')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'OmegaLinks.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'a7dd73ad6bc8aee4cc1d52b750f58ac69ed52591')
 
      # Auto Delete For Group Message (Self Delete) #
 SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 120))
