@@ -48,11 +48,11 @@ SUB_DATE = environ.get('SUB_DATE', 'Not Active')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001551869890'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'ipapcornsupport')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
-IMDB = is_enabled((environ.get('IMDB', "True")), False)
+IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file_name}</code> \n\n [𝘼𝙡𝙡 𝙉𝙚𝙬 𝙈𝙤𝙫𝙞𝙚𝙨 𝙐𝙥𝙙𝙖𝙩𝙚𝙨 𝙃𝙚𝙧𝙚](https://t.me/Film_Update_Official)</b>")
-BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file_name}</code> \n\n [𝘼𝙡𝙡 𝙉𝙚𝙬 𝙈𝙤𝙫𝙞𝙚𝙨 𝙐𝙥𝙙𝙖𝙩𝙚𝙨 𝙃𝙚𝙧𝙚](https://t.me/Film_Update_Official)</b>")
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🎞️ ᴛɪᴛᴛʟᴇ :  {title} \nPowered By🎉: @tlgdirectmovies_bot")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file_name}</code> \n\n [𝘼𝙡𝙡 𝙉𝙚𝙬 𝙈𝙤𝙫𝙞𝙚𝙨 𝙐𝙥𝙙𝙖𝙩𝙚𝙨 𝙃𝙚𝙧𝙚](https://t.me/New_Moviee_hindi)</b>")
+BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file_name}</code> \n\n [𝘼𝙡𝙡 𝙉𝙚𝙬 𝙈𝙤𝙫𝙞𝙚𝙨 𝙐𝙥𝙙𝙖𝙩𝙚𝙨 𝙃𝙚𝙧𝙚](https://t.me/New_Moviee_hindi)</b>")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🎞️ ᴛɪᴛᴛʟᴇ :  {title} \nPowered By🎉: @New_Moviee_hindi")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "True"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
@@ -76,8 +76,8 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
     
 # URL Shortener #
 
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'OmegaLinks.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'a7dd73ad6bc8aee4cc1d52b750f58ac69ed52591')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
+SHORTLINK_API = environ.get('SHORTLINK_API', '')
 
      # Auto Delete For Group Message (Self Delete) #
 SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 120))
