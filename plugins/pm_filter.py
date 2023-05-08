@@ -1117,7 +1117,7 @@ async def advantage_spell_chok(msg):
         ]]
         reply_markup = InlineKeyboardMarkup(button)
         await srh_msg.edit_text(
-            text="<b>△ 𝙷𝚎𝚢 𝚜𝚘𝚗𝚊 😎,\n\nPʟᴇᴀsᴇ Sᴇᴀʀᴄʜ Yᴏᴜʀ Mᴏᴠɪᴇs Hᴇʀᴇ.\n\n༺ ➟ 👮 Movie Group Link : https://t.me/+yVBYnhJLr7dhOTg1 ༻! </b>')
+            text="<b>△ 𝙷𝚎𝚢 𝚜𝚘𝚗𝚊 😎,\n\nPʟᴇᴀsᴇ Sᴇᴀʀᴄʜ Yᴏᴜʀ Mᴏᴠɪᴇs Hᴇʀᴇ.\n\n༺ ➟ 👮 Movie Group Link : https://t.me/+yVBYnhJLr7dhOTg1 ༻! </b>")
         )
         await srh_msg.edit_reply_markup(reply_markup)
         await bot.send_message(-1001529577466, text=f'<b>#NO_RESULTS\nSIR THIS MOVIE IS NOT FOUND IN MY DATABASE\n\nMOVIE NAME : {movie}</b>', reply_markup=reply_markup)
