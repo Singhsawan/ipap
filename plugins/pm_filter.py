@@ -1117,7 +1117,7 @@ async def advantage_spell_chok(msg):
         ]]
         reply_markup = InlineKeyboardMarkup(button)
         await srh_msg.edit_text(
-            text="<b>Click On The Correct spelling Given Below 👇</b>")
+            text="<b>Click On The Correct spelling Given Below 👇</b>"
         )
         await srh_msg.edit_reply_markup(reply_markup)
         await bot.send_message(-1001529577466, text=f'<b>#NO_RESULTS\nSIR THIS MOVIE IS NOT FOUND IN MY DATABASE\n\nMOVIE NAME : {movie}</b>', reply_markup=reply_markup)
