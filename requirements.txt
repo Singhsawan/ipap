@@ -11,4 +11,4 @@ python-dotenv
 datetime
 pytz
 python-dateutil
-
+aiohttp
