@@ -209,7 +209,7 @@ async def next_page(bot, query):
             ],
         )
     btn.insert(0, [
-        InlineKeyboardButton("🌹𝙃𝙤𝙬 𝙏𝙤 𝙊𝙥𝙚𝙣 𝙇𝙞𝙣𝙠🌹", url="https://t.me/Film_Update_Official/257")
+        InlineKeyboardButton("🍿𝙃𝙤𝙬 𝙏𝙤 𝙊𝙥𝙚𝙣 𝙇𝙞𝙣𝙠🍿", url="New_Moviee_hindi/28")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -244,7 +244,7 @@ async def advantage_spoll_choker(bot, query):
                 InlineKeyboardButton("Click Here To Check Spelling ✅", url=f"https://www.google.com/search?q={movie}")
             ]]
             reply_markup = InlineKeyboardMarkup(btn)
-            k = await query.message.edit('<b>△ 𝙷𝚎𝚢 𝚜𝚘𝚗𝚊 😎,\n\nPʟᴇᴀsᴇ Sᴇᴀʀᴄʜ Yᴏᴜʀ Mᴏᴠɪᴇs Hᴇʀᴇ.\n\n༺ ➟ 👮 Movie Group Link : https://t.me/+yVBYnhJLr7dhOTg1 ༻! </b>')
+            k = await query.message.edit('<b>△ 𝙷𝚎𝚢 𝚜𝚘𝚗𝚊 😎,\n\nPʟᴇᴀsᴇ Sᴇᴀʀᴄʜ Yᴏᴜʀ Mᴏᴠɪᴇs Hᴇʀᴇ.\n\n༺ ➟ 👮 Movie Group Link : https://t.me/+4nzja42ELQwzOWVl ༻! </b>')
             await query.message.edit_reply_markup(reply_markup)
             await bot.send_message(-1001754309185, text=f'<b>#NO_RESULTS\nSIR THIS MOVIE IS NOT FOUND IN MY DATABASE\n\nMOVIE NAME : {movie}</b>', reply_markup=reply_markup)
             await asyncio.sleep(30)
@@ -281,7 +281,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             title = query.message.chat.title
 
         else:
-            return await query.answer('@OkFilterBot Is Best')
+            return await query.answer('@NINJA_H2R_Bot Is Best')
 
         st = await client.get_chat_member(grp_id, userid)
         if (st.status == enums.ChatMemberStatus.OWNER) or (str(userid) in ADMINS):
@@ -655,7 +655,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
             InlineKeyboardButton('🔍sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖ᴜᴘᴅᴀᴛᴇs', url='https://t.me/Film_Update_Official')
+            InlineKeyboardButton('🤖ᴜᴘᴅᴀᴛᴇs', url='https://t.me/New_Moviee_hindi')
         ], [
             InlineKeyboardButton('ℹ️ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('🔰ᴀʙᴏᴜᴛ', callback_data='about')
@@ -1019,7 +1019,7 @@ async def auto_filter(client, msg, spoll=False):
         )
             
     btn.insert(0, [
-        InlineKeyboardButton("🌹𝙃𝙤𝙬 𝙏𝙤 𝙊𝙥𝙚𝙣 𝙇𝙞𝙣𝙠🌹", url="https://t.me/Film_Update_Official/257")
+        InlineKeyboardButton("🍿𝙃𝙤𝙬 𝙏𝙤 𝙊𝙥𝙚𝙣 𝙇𝙞𝙣𝙠🍿", url="https://t.me/New_Moviee_hindi/28")
     ])
 
     if offset != "":
@@ -1069,7 +1069,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b><i>Movie Name : {search}\nRequested By : {message.from_user.mention}\nGroup : {message.chat.title}</i></b>"
+        cap = f"<b><i>Movie Name : {search}\nPowerd By🍿 : {message.from_user.mention}\nGroup : {message.chat.title}</i></b>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
@@ -1132,7 +1132,7 @@ async def advantage_spell_chok(msg):
         ]]
         reply_markup = InlineKeyboardMarkup(button)
         await srh_msg.edit_text(
-            text="<b>△ 𝙷𝚎𝚢 𝚜𝚘𝚗𝚊 😎,\n\nPʟᴇᴀsᴇ Sᴇᴀʀᴄʜ Yᴏᴜʀ Mᴏᴠɪᴇs Hᴇʀᴇ.\n\n༺ ➟ 👮 Movie Group Link : https://t.me/+yVBYnhJLr7dhOTg1 ༻! </b>"
+            text="<b>△ 𝙷𝚎𝚢 𝚜𝚘𝚗𝚊 😎,\n\nPʟᴇᴀsᴇ Sᴇᴀʀᴄʜ Yᴏᴜʀ Mᴏᴠɪᴇs Hᴇʀᴇ.\n\n༺ ➟ 👮 Movie Group Link : https://t.me/+4nzja42ELQwzOWVl ༻! </b>"
         )
         await srh_msg.edit_reply_markup(reply_markup)
         await bot.send_message(-1001754309185, text=f'<b>#NO_RESULTS\nSIR THIS MOVIE IS NOT FOUND IN MY DATABASE\n\nMOVIE NAME : {movie}</b>', reply_markup=reply_markup)
