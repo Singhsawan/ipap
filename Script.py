@@ -11,14 +11,16 @@ def is_enabled(value, default):
         return default
 
 class script(object):
-    HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://t.me/tlgdirectmovies_bot_updates')
-    START_TXT = environ.get("START_TXT", '''HELLO {} 👋🏻  𝙸 𝙰𝙼 𝙰𝙽 𝙰𝙳𝚅𝙰𝙽𝙲𝙴𝙳 𝙰𝚄𝚃𝙾-𝙵𝙸𝙻𝚃𝙴𝚁 𝙱𝙾𝚃. 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝙰𝙽𝚈 𝚂𝙷𝙾𝚁𝚃𝙽𝙴𝚁 𝙸𝙽𝚃𝙾 𝙼𝙴 𝚃𝙷𝙴𝙽 𝙸 𝚆𝙸𝙻𝙻 𝙶𝙸𝚅𝙴 𝚈𝙾𝚄𝚁 𝙻𝙸𝙽𝙺𝚂 𝙸𝙽 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝙸𝙽 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽❤️‍🔥</i>''')
+    HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://t.me/bot_channel_011')
+    START_TXT = environ.get("START_TXT", '''HELLO {} 👋🏻 ɪ ᴀᴍ ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏꜰɪʟᴛᴇʀ + ᴍᴀɴᴜᴀʟꜰɪʟᴛᴇʀ + ꜰɪʟᴇsᴛᴏʀᴇ ʙᴏᴛ.
+
+ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɪ ᴡɪʟʟ ɢɪᴠᴇ ᴍᴏᴠɪᴇs ᴏʀ sᴇʀɪᴇs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘᴍ !!❤️‍🔥</i>''')
     HELP_TXT = """ʜᴇʏ {}
 ʜᴇʀᴇ ɪs ʜᴇʟᴘ sᴇᴄᴛɪᴏɴ. ."""
-    ABOUT_TXT = """<b>ᴀʙᴏᴜᴛ ᴍᴇ <i>🤖 ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/Owner_contact_rebot><b>𝙊𝙒𝙉𝙀𝙍 𝘾𝙊𝙉𝙏𝘼𝘾𝙏 𝘽𝙊𝙏</b></a>\n
-👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/Owner_contact_rebot><b>𝙊𝙒𝙉𝙀𝙍 𝘾𝙊𝙉𝙏𝘼𝘾𝙏 𝘽𝙊𝙏</b></a>\n
+    ABOUT_TXT = """<b>ᴀʙᴏᴜᴛ ᴍᴇ <i>🤖 ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/J_shree_ram><b>𝙊𝙒𝙉𝙀𝙍 𝘾𝙊𝙉𝙏𝘼𝘾𝙏 𝘽𝙊𝙏</b></a>\n
+👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/J_shree_ram><b>𝙊𝙒𝙉𝙀𝙍 𝘾𝙊𝙉𝙏𝘼𝘾𝙏 𝘽𝙊𝙏</b></a>\n
 📡 ʜᴏsᴛᴇᴅ ᴏɴ : 𝐏𝐀𝐈𝐃 𝐕𝐏𝐒\n
-📢 ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/tlgdirectmovies_bot_updates><b></b>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>\n"""
+📢 ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/bot_channel_011><b></b>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>\n"""
     SOURCE_TXT = """<b>𝐂𝐫𝐞𝐚𝐭𝐞 𝐎𝐧𝐞 𝐋𝐢𝐤𝐞 𝐓𝐡𝐢𝐬:</b>
 » 𝙒𝙖𝙣𝙩 𝙏𝙤 𝙍𝙚𝙥𝙤 𝙊𝙛 𝙏𝙝𝙞𝙨 𝘽𝙤𝙩 𝘽𝙪𝙙𝙙𝙮! <b>
 » 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝙊𝙒𝙉𝙀𝙍 𝘾𝙊𝙉𝙏𝘼𝘾𝙏 𝘽𝙊𝙏<b>"""
