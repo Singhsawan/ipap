@@ -244,7 +244,7 @@ async def advantage_spoll_choker(bot, query):
                 InlineKeyboardButton("Click Here To Check Spelling ✅", url=f"https://www.google.com/search?q={movie}")
             ]]
             reply_markup = InlineKeyboardMarkup(btn)
-            k = await query.message.edit('<b>△ 𝙷𝚎𝚢 𝚜𝚘𝚗𝚊 😎,\n\nPʟᴇᴀsᴇ Sᴇᴀʀᴄʜ Yᴏᴜʀ Mᴏᴠɪᴇs Hᴇʀᴇ.\n\n༺ ➟ 👮 Movie Group Link : https://t.me/+4nzja42ELQwzOWVl ༻! </b>')
+            k = await query.message.edit('<b>Click On The Correct spelling Given Below 👇</b>')
             await query.message.edit_reply_markup(reply_markup)
             await bot.send_message(-1001754309185, text=f'<b>#NO_RESULTS\nSIR THIS MOVIE IS NOT FOUND IN MY DATABASE\n\nMOVIE NAME : {movie}</b>', reply_markup=reply_markup)
             await asyncio.sleep(30)
@@ -931,7 +931,7 @@ async def auto_filter(client, msg, spoll=False):
                 if not admin.user.is_bot:
                     await client.send_message(
                         chat_id=admin.user.id,
-                        text="<b>ATTENTION !\n\nThis is an important message, Your subscription has been ended and you have no longer access to link shortners. To continue your link shortners, Kindly renew your subscription ! please contact for subscription @Owner_contact_rebot</b>",
+                        text="<b>ATTENTION !\n\nThis is an important message, Your subscription has been ended and you have no longer access to link shortners. To continue your link shortners, Kindly renew your subscription ! please contact for subscription @J_shree_ram</b>",
                         disable_web_page_preview=True
                     )
                 else:
@@ -946,7 +946,7 @@ async def auto_filter(client, msg, spoll=False):
             if not admin.user.is_bot:
                 await client.send_message(
                     chat_id=admin.user.id,
-                    text="<b>ATTENTION !\n\nThis is an important message, Your subscription has been ended and you have no longer access to link shortners. To continue your link shortners, Kindly renew your subscription ! please contact for subscription @Owner_contact_rebot</b>",
+                    text="<b>ATTENTION !\n\nThis is an important message, Your subscription has been ended and you have no longer access to link shortners. To continue your link shortners, Kindly renew your subscription ! please contact for subscription @J_shree_ram</b>",
                     disable_web_page_preview=True
                 )
             else:
@@ -1132,7 +1132,7 @@ async def advantage_spell_chok(msg):
         ]]
         reply_markup = InlineKeyboardMarkup(button)
         await srh_msg.edit_text(
-            text="<b>△ 𝙷𝚎𝚢 𝚜𝚘𝚗𝚊 😎,\n\nPʟᴇᴀsᴇ Sᴇᴀʀᴄʜ Yᴏᴜʀ Mᴏᴠɪᴇs Hᴇʀᴇ.\n\n༺ ➟ 👮 Movie Group Link : https://t.me/+4nzja42ELQwzOWVl ༻! </b>"
+            text="<b>Click On The Correct spelling Given Below 👇</b>"
         )
         await srh_msg.edit_reply_markup(reply_markup)
         await bot.send_message(-1001754309185, text=f'<b>#NO_RESULTS\nSIR THIS MOVIE IS NOT FOUND IN MY DATABASE\n\nMOVIE NAME : {movie}</b>', reply_markup=reply_markup)
