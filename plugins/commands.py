@@ -623,7 +623,7 @@ async def plans(bot, message):
         grpid = message.text.split(" ", 1)[1]
     except ValueError:
         return await message.reply_text(f"<b>Hey {message.from_user.mention}, Give me a group id along with the command !\n\nFormat:\n/addplan -1001.....</b>")
-    settings = await get_settings(grpid)
+    settings = await get_settings(user.id)
     if 'sub_date' in settings.keys():
         sub_date = settings['sub_date']
     else:
@@ -635,9 +635,9 @@ async def plans(bot, message):
             comp = date(int(years), int(month), int(day))
             if comp<today:
                 exp_date = 'Expired'
-                await save_group_settings(grpid, 'plan_name', 'Expired')
-                await save_group_settings(grpid, 'sub_date', 'Expired')
-                await save_group_settings(grpid, 'exp_date', 'Expired')
+                await save_group_settings(userid, 'plan_name', 'Expired')
+                await save_group_settings(userid, 'sub_date', 'Expired')
+                await save_group_settings(userid, 'exp_date', 'Expired')
                 async for admin in bot.get_chat_members(chat_id=grpid, filter=enums.ChatMembersFilter.ADMINISTRATORS):
                     if not admin.user.is_bot:
                         await bot.send_message(
@@ -656,24 +656,24 @@ async def plans(bot, message):
     else:
         plan = 'Not Active'
     btn = [[
-            InlineKeyboardButton("Add 1 Day", callback_data=f"plans#1day#{grpid}")
+            InlineKeyboardButton("Add 1 Day", callback_data=f"plans#1day#{userid}")
         ],[
-            InlineKeyboardButton("Add 3 Days", callback_data=f"plans#3days#{grpid}")
+            InlineKeyboardButton("Add 3 Days", callback_data=f"plans#3days#{userid}")
         ],[
-            InlineKeyboardButton("Add 1 Week", callback_data=f"plans#1week#{grpid}")
+            InlineKeyboardButton("Add 1 Week", callback_data=f"plans#1week#{userid}")
         ],[
-            InlineKeyboardButton("Add 1 Month", callback_data=f"plans#1month#{grpid}")
+            InlineKeyboardButton("Add 1 Month", callback_data=f"plans#1month#{userid}")
         ],[
-            InlineKeyboardButton("Add 3 Months", callback_data=f"plans#3months#{grpid}")
+            InlineKeyboardButton("Add 3 Months", callback_data=f"plans#3months#{userid}")
         ],[
-            InlineKeyboardButton("Add 6 Months", callback_data=f"plans#6months#{grpid}")
+            InlineKeyboardButton("Add 6 Months", callback_data=f"plans#6months#{userid}")
         ],[
-            InlineKeyboardButton("Remove Access", callback_data=f"plans#remove#{grpid}")
+            InlineKeyboardButton("Remove Access", callback_data=f"plans#remove#{userid}")
         ],[
             InlineKeyboardButton("Close", callback_data="close_data")
     ]]
     await message.reply_text(
-        text=f"<b>Group ID: <code>{grpid}</code>\nCurrent Plan: <code>{plan}</code>\nSubscription Date: <code>{sub_date}</code>\nExpiry Date: <code>{exp_date}</code></b>",
+        text=f"<b>userid: <code>{grpid}</code>\nCurrent Plan: <code>{plan}</code>\nSubscription Date: <code>{sub_date}</code>\nExpiry Date: <code>{exp_date}</code></b>",
         reply_markup=InlineKeyboardMarkup(btn)
     )
 
@@ -683,7 +683,7 @@ async def showplan(bot, message):
         grpid = message.text.split(" ", 1)[1]
     except:
         return await message.reply_text("<b>Give me a group id along with the command !\n\nFormat:\n/myplan -1001....</b>")
-    settings = await get_settings(grpid)
+    settings = await get_settings(userid)
     if 'plan_name' in settings.keys():
         plan = settings.get('plan_name')
     else:
