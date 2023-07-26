@@ -16,7 +16,7 @@ PORT = environ.get("PORT", "8080")
 SESSION = environ.get('SESSION', 'ipapcornbot')
 API_ID = int(environ.get('API_ID', '21748181'))
 API_HASH = environ.get('API_HASH', 'b1d962414e186e0778911f3183feac33')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6247894220:AAHPF6b8X3g95vY6tc1GpphCSgBGLC2YcDw")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6107621055:AAH9-32kWc27MG61mEVMydEsidMzBxhoHl8")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -29,7 +29,7 @@ ADMINS = (ADMINS.copy() + [5651594253])
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', 'xxxxxxxxxx').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', '-1001952663939')
+auth_channel = environ.get('AUTH_CHANNEL', '')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -38,14 +38,14 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Test:Sawansingh24@cluster0.eicxbp9.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Clus")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'files')
 
 # Others
 PLAN_NAME = environ.get('PLAN_NAME', 'Not Active')
 EXP_DATE = environ.get('EXP_DATE', 'Not Active')
 SUB_DATE = environ.get('SUB_DATE', 'Not Active')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001551869890'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001863769271'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'bot_channel_011')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
